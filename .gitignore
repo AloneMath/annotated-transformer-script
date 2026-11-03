@@ -1,0 +1,8 @@
+# Only publish the files listed below; ignore everything else
+# (data/, checkpoints *.pt, vocab.pt, notebooks, images, __pycache__, ...)
+/*
+!/transformer.py
+!/requirements.txt
+!/README.md
+!/LICENSE
+!/.gitignore

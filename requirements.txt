@@ -1,0 +1,18 @@
+# Python 3.8 - 3.12 is required.
+# torchtext 0.18.0 is its final release: it has no wheels for Python 3.13+
+# and only works with torch 2.3.0.
+#
+# For GPU training, install the CUDA build of torch first (see README), e.g.:
+#   pip install torch==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.0
+torchtext==0.18.0
+
+# torch 2.3.0 was built against NumPy 1.x
+numpy<2
+pandas
+matplotlib
+# spaCy 3.8+ requires NumPy 2, so stay on 3.7
+spacy>=3.7,<3.8
+GPUtil
+# GPUtil imports distutils, which was removed from the stdlib in Python 3.12
+setuptools
